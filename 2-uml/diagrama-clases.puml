@@ -1,0 +1,38 @@
+@startuml
+class Jugador {
+ - nombre: String
+ - puntuacion: int
+ + iniciarPartida()
+ + seleccionarDecision()
+ + consultarResultados()
+}
+class Juego {
+ - nivelActual: int
+ + iniciar()
+ + mostrarSituacion()
+ + avanzar()
+ + finalizar()
+}
+class Situacion {
+ - id: int
+ - descripcion: String
+ + mostrarOpciones()
+}
+class Decision {
+ - texto: String
+ - consecuencia: String
+ - puntos: int
+ + evaluar()
+}
+class Resultado {
+ - puntosTotales: int
+ - respuestas: int
+ + calcular()
+ + mostrar()
+}
+Jugador "1" --> "1" Juego : juega
+Juego "1" *-- "1..*" Situacion : contiene
+Situacion "1" *-- "2..*" Decision : ofrece
+Juego --> Resultado : genera
+Jugador --> Resultado : consulta
+@enduml

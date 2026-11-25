@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#dff5df"/><stop offset="1" stop-color="#a6d8b0"/></linearGradient></defs>
+<rect width="1200" height="675" fill="url(#bg)"/><circle cx="1000" cy="115" r="80" fill="#f7d66b" opacity=".9"/>
+<path d="M0 530 Q250 440 500 540 T1000 510 T1200 530 V675 H0Z" fill="#4b9b65"/>
+<circle cx="180" cy="500" r="65" fill="#2e7d4d"/><rect x="168" y="500" width="24" height="100" fill="#795548"/>
+<text x="600" y="170" text-anchor="middle" font-family="Arial,sans-serif" font-size="54" font-weight="bold" fill="#174d32">RESULTADOS</text>
+<text x="600" y="255" text-anchor="middle" font-family="Arial,sans-serif" font-size="32" fill="#245b3b">¡Terminaste esta ronda!</text>
+<text x="600" y="330" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" fill="#245b3b">Tus decisiones ayudan a construir un planeta más limpio.</text>
+<rect x="390" y="400" width="420" height="76" rx="25" fill="#176b43"/><text x="600" y="449" text-anchor="middle" font-family="Arial,sans-serif" font-size="27" font-weight="bold" fill="white">PUNTUACIÓN   |   VOLVER A JUGAR</text>
+<text x="600" y="625" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" fill="white">ECOFIE • CADA DECISIÓN CUENTA</text></svg>

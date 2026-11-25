@@ -1,0 +1,26 @@
+@startuml
+actor Jugador
+participant ECOFIE as Juego
+participant Situacion
+participant Decision
+participant Resultado
+Jugador -> Juego: Iniciar partida
+Juego -> Situacion: Cargar situación
+Situacion --> Juego: Descripción y opciones
+Juego --> Jugador: Mostrar situación
+Jugador -> Juego: Seleccionar opción
+Juego -> Decision: Evaluar selección
+Decision --> Juego: Consecuencia y puntos
+Juego -> Resultado: Actualizar puntuación
+Juego --> Jugador: Mostrar consecuencia
+Jugador -> Juego: Continuar
+alt Hay más situaciones
+ Juego -> Situacion: Cargar siguiente
+ Situacion --> Juego: Nueva situación
+ Juego --> Jugador: Mostrar opciones
+else Fin de partida
+ Juego -> Resultado: Calcular resumen
+ Resultado --> Juego: Puntuación final
+ Juego --> Jugador: Mostrar resultados
+end
+@enduml

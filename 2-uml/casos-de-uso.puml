@@ -1,0 +1,22 @@
+@startuml
+left to right direction
+actor Jugador
+rectangle ECOFIE {
+ usecase "Iniciar partida" as A
+ usecase "Ver situación ambiental" as B
+ usecase "Consultar opciones" as C
+ usecase "Seleccionar decisión" as D
+ usecase "Ver consecuencias" as E
+ usecase "Consultar puntuación" as F
+ usecase "Ver resultados finales" as G
+}
+Jugador --> A
+Jugador --> B
+Jugador --> C
+Jugador --> D
+Jugador --> E
+Jugador --> F
+Jugador --> G
+D .> E : <<include>>
+D .> F : <<include>>
+@enduml
